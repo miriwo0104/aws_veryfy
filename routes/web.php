@@ -23,3 +23,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/upload/image', 'ImageController@input');
 //画像ファイルをアップロードする処理のルーティング
 Route::post('/upload/image', 'ImageController@upload');
+//画像表示
+Route::get('/output/image', 'ImageController@output')->name('output');
